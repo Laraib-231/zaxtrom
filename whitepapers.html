@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Whitepapers - Zaxtrom</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { zaxtrom: { red: '#e63946', dark: '#1a1a1a', light: '#f8f9fa' } }
+        }
+      }
+    };
+  </script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <style>
+    .nav-link:hover { color: #e63946 !important; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.08); }
+  </style>
+</head>
+<body class="bg-zaxtrom-light text-gray-800 font-sans">
+
+  <!-- NAV -->
+  <nav class="bg-zaxtrom-dark text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="whitelogo.png" alt="Zaxtrom" class="h-10 w-auto">
+        <!-- <span class="text-2xl font-bold text-zaxtrom-red">ZAXTROM</span> -->
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="nav-link text-white">Home</a>
+        <a href="about.html" class="nav-link text-white">About</a>
+        <a href="leader.html" class="nav-link text-white">Leadership</a>
+        <a href="learn.html" class="nav-link text-white">Learn</a>
+        <a href="careers.html" class="nav-link text-white">Careers</a>
+        <a href="contact.html" class="nav-link text-white">Contact</a>
+      </div>
+
+      <div class="md:hidden">
+        <button class="mobile-menu-button"><i data-feather="menu" class="text-white"></i></button>
+      </div>
+    </div>
+
+    <div class="mobile-menu hidden md:hidden bg-zaxtrom-dark py-4">
+      <a href="index.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Home</a>
+      <a href="about.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">About</a>
+      <a href="leader.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Leadership</a>
+      <a href="learn.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Learn</a>
+      <a href="careers.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Careers</a>
+      <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-zaxtrom-dark to-black text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">Whitepapers</h1>
+      <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        Deep research and industry insights from the Zaxtrom team — designed for leaders and practitioners.
+      </p>
+    </div>
+  </section>
+
+  <!-- LIST -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <!-- paper -->
+        <article class="card bg-zaxtrom-light rounded-xl p-6" data-aos="fade-up">
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-zaxtrom-red font-semibold">Whitepaper</div>
+            <div class="text-sm text-gray-500">20 min read</div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">AI in Enterprise: Adoption & ROI</h3>
+          <p class="text-gray-600 mb-4">How organizations structure AI programs to deliver measurable ROI and avoid common pitfalls.</p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-zaxtrom-red font-semibold">Download PDF</a>
+            <span class="text-sm text-gray-500">Updated 2025</span>
+          </div>
+        </article>
+
+        <article class="card bg-zaxtrom-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-zaxtrom-red font-semibold">Whitepaper</div>
+            <div class="text-sm text-gray-500">18 min read</div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Cloud Migration Best Practices</h3>
+          <p class="text-gray-600 mb-4">A practical roadmap for secure, cost-effective cloud migration at scale.</p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-zaxtrom-red font-semibold">Download PDF</a>
+            <span class="text-sm text-gray-500">Updated 2024</span>
+          </div>
+        </article>
+
+        <article class="card bg-zaxtrom-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-zaxtrom-red font-semibold">Whitepaper</div>
+            <div class="text-sm text-gray-500">25 min read</div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Data Privacy Frameworks for SMEs</h3>
+          <p class="text-gray-600 mb-4">Practical steps SMEs can take to comply with global data protection expectations.</p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-zaxtrom-red font-semibold">Download PDF</a>
+            <span class="text-sm text-gray-500">Updated 2023</span>
+          </div>
+        </article>
+
+        <!-- more placeholders -->
+        <article class="card bg-zaxtrom-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-zaxtrom-red font-semibold">Whitepaper</div>
+            <div class="text-sm text-gray-500">16 min read</div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Quantum-Ready Strategies</h3>
+          <p class="text-gray-600 mb-4">Preparing enterprise cryptography and compute for quantum-resistant future.</p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-zaxtrom-red font-semibold">Download PDF</a>
+            <span class="text-sm text-gray-500">Draft</span>
+          </div>
+        </article>
+
+        <article class="card bg-zaxtrom-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-zaxtrom-red font-semibold">Whitepaper</div>
+            <div class="text-sm text-gray-500">12 min read</div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Edge AI: Patterns & Use Cases</h3>
+          <p class="text-gray-600 mb-4">Design patterns for low-latency AI at the edge.</p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-zaxtrom-red font-semibold">Download PDF</a>
+            <span class="text-sm text-gray-500">Updated 2025</span>
+          </div>
+        </article>
+
+        <article class="card bg-zaxtrom-light rounded-xl p-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-zaxtrom-red font-semibold">Whitepaper</div>
+            <div class="text-sm text-gray-500">30 min read</div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">AI Ethics & Responsible Use</h3>
+          <p class="text-gray-600 mb-4">Practical governance, risk, and controls for responsible AI deployment.</p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-zaxtrom-red font-semibold">Download PDF</a>
+            <span class="text-sm text-gray-500">Updated 2024</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="contact.html" class="bg-zaxtrom-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition">Request a Custom Report</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-zaxtrom-dark text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-zaxtrom-red">ZAXTROM</h3>
+          <p class="text-gray-400">Innovating solutions for a better tomorrow.</p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Company</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="leader.html">Leadership</a></li>
+            <li><a href="career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Resources</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="whitepapers.html">Whitepapers</a></li>
+            <li><a href="case-study.html">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Okara, Punjab, Pakistan</li>
+            <li>Zaxtrom.official658@gmail.com</li>
+            <li>+92 306 7938404</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Zaxtrom. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+          <a href="cookie.html" class="text-gray-500 hover:text-white text-sm">Cookies</a>
+          <a href="case-study.html" class="text-gray-500 hover:text-white text-sm">Case Studies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+    feather.replace();
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenuButton?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

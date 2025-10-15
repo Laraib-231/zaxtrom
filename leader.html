@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership - Zaxtrom Executive Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zaxtrom: {
+                            red: '#e63946',
+                            dark: '#1a1a1a',
+                            light: '#f8f9fa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .nav-link:hover { color: #e63946 !important; }
+        .leader-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+        .leader-card:hover .leader-img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-zaxtrom-light text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-zaxtrom-dark text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+                    <a href="index.html">
+                    <img src="whitelogo.png" alt="Zaxtrom Logo" class="h-10 w-full">
+                    </a>
+            <!-- <a href="index.html" class="text-2xl font-bold text-zaxtrom-red">ZAXTROM</a> -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="leader.html" class="text-zaxtrom-red font-semibold">Leadership</a>
+                <a href="learn.html" class="nav-link">Learn</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="mobile-menu-button"><i data-feather="menu"></i></button>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden bg-zaxtrom-dark py-4">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">About</a>
+            <a href="leader.html" class="block py-2 px-4 text-sm bg-zaxtrom-red">Leadership</a>
+            <a href="learn.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Learn</a>
+            <a href="careers.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Careers</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-zaxtrom-dark to-black text-white py-20 text-center">
+        <h1 class="text-5xl font-bold mb-4" data-aos="fade-up">Leadership Team</h1>
+        <p class="text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            Visionary leaders driving innovation and growth at Zaxtrom.
+        </p>
+    </section>
+
+    <!-- Executive Leadership -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Executive Leadership</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Areena -->
+                <div class="leader-card bg-zaxtrom-light rounded-xl overflow-hidden shadow-md" data-aos="fade-up">
+                    <div class="overflow-hidden h-64">
+                        <img src="Areena.jpg" alt="CEO" class="leader-img w-full h-50% object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Areena Arshad</h3>
+                        <p class="text-zaxtrom-red font-semibold mb-3">Chief Executive Officer</p>
+                        <p class="text-gray-600 mb-4">
+                            With over 5 years in tech leadership, Areena drives Zaxtrom’s global strategy and operational excellence.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laraib -->
+                <div class="leader-card bg-zaxtrom-light rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="overflow-hidden h-64">
+                        <img src="Laraib.png" alt="CVO" class="leader-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Laraib Rauf</h3>
+                        <p class="text-zaxtrom-red font-semibold mb-3">Founder & Chief Visionary Officer</p>
+                        <p class="text-gray-600 mb-4">
+                            Founder of Zaxtrom and driving force behind its innovation — Laraib ensures the company stays future-focused and creative.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abid -->
+                <div class="leader-card bg-zaxtrom-light rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden h-64">
+                        <img src="Abid.jpeg" alt="MD" class="leader-img w-full h-50% object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Abid Farooq</h3>
+                        <p class="text-zaxtrom-red font-semibold mb-3">Co-Founder & Managing Director</p>
+                        <p class="text-gray-600 mb-4">
+                            Abid oversees strategic partnerships, operations, and growth initiatives. His exceptional business acumen and leadership ensure smooth execution of Zaxtrom’s vision globally.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/abid-farooq-409313229/" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="linkedin"></i></a>
+                            <a href="https://www.fiverr.com/s/P21dvPp" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="dollar-sign"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sherii -->
+                <div class="leader-card bg-zaxtrom-light rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="overflow-hidden h-64">
+                        <img src="Sherii.png" alt="PR Director" class="leader-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Sherii</h3>
+                        <p class="text-zaxtrom-red font-semibold mb-3">Director of Public Relations</p>
+                        <p class="text-gray-600 mb-4">
+                            Sherii builds and maintains Zaxtrom’s brand image across all media platforms, ensuring clear and inspiring communication.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sheema -->
+                <div class="leader-card bg-zaxtrom-light rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="overflow-hidden h-64">
+                        <img src="Sheema.jpg" alt="Content Creator" class="leader-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Sheema</h3>
+                        <p class="text-zaxtrom-red font-semibold mb-3">Creative Content Lead</p>
+                        <p class="text-gray-600 mb-4">
+                            From brand storytelling to campaign visuals, Sheema crafts creative content that connects Zaxtrom with its audience globally.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Samreen -->
+                <div class="leader-card bg-zaxtrom-light rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="500">
+                    <div class="overflow-hidden h-64">
+                        <img src="Samreen.jpg" alt="HR Manager" class="leader-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Samreen</h3>
+                        <p class="text-zaxtrom-red font-semibold mb-3">Human Resource Manager</p>
+                        <p class="text-gray-600 mb-4">
+                            Samreen fosters a positive and productive workplace culture, leading HR initiatives that empower Zaxtrom’s growing team.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-zaxtrom-red"><i data-feather="mail"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Principles --> 
+    <section class="py-20 bg-zaxtrom-dark text-white"> 
+        <div class="container mx-auto px-6"> 
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Our Leadership Principles</h2> 
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"> 
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100"> 
+                    <h3 class="text-xl font-bold mb-3 flex items-center"> 
+                        <span class="text-zaxtrom-red mr-3">
+                            <i data-feather="compass"></i>
+                        </span> Visionary Thinking </h3> 
+                        <p class="text-gray-300">We anticipate future trends and position Zaxtrom to lead rather than follow.</p> 
+                    </div> 
+                    <div class="bg-black bg-opacity-30 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200"> 
+                        <h3 class="text-xl font-bold mb-3 flex items-center"> 
+                            <span class="text-zaxtrom-red mr-3"><i data-feather="users">
+                            </i>
+                        </span> People First </h3> 
+                        <p class="text-gray-300">Our team's growth and wellbeing are the foundation of our success.</p>
+                    </div> 
+                    <div class="bg-black bg-opacity-30 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300"> 
+                        <h3 class="text-xl font-bold mb-3 flex items-center"> 
+                            <span class="text-zaxtrom-red mr-3">
+                                <i data-feather="zap"></i>
+                            </span> Bold Decision Making </h3> 
+                            <p class="text-gray-300">We make courageous choices that drive meaningful impact.</p> 
+                        </div> 
+                        <div class="bg-black bg-opacity-30 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="400"> 
+                            <h3 class="text-xl font-bold mb-3 flex items-center"> 
+                                <span class="text-zaxtrom-red mr-3">
+                                    <i data-feather="shield"></i>
+                                </span> Ethical Foundation </h3>
+                                <p class="text-gray-300">All decisions are guided by strong moral and ethical principles.</p> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </section>
+                <!-- Board of Directors --> 
+                <section class="py-20 bg-white"> 
+                    <div class="container mx-auto px-6"> 
+                        <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Board of Directors</h2> 
+                        <div class="grid md:grid-cols-3 gap-8"> 
+                            <div class="text-center" data-aos="fade-up" data-aos-delay="100"> 
+                                <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-zaxtrom-red"> 
+                                    <img src="Laraib.png" alt="Board Member" class="w-full h-full object-cover"> 
+                                </div> <h3 class="text-xl font-bold">Laraeb Rauf</h3> 
+                                <p class="text-zaxtrom-red mb-2">Chairperson</p> 
+                                <p class="text-gray-600 text-sm">Founder & Visionary of Zaxtrom</p> 
+                            </div> <div class="text-center" data-aos="fade-up" data-aos-delay="200"> 
+                                <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-zaxtrom-red"> 
+                                    <img src="Abid.jpeg" alt="Board Member" class="w-full h-90% object-cover"> 
+                                </div> 
+                                <h3 class="text-xl font-bold">Abid Farooq</h3> 
+                                <p class="text-zaxtrom-red mb-2">Board Member</p> 
+                                <p class="text-gray-600 text-sm">Manging Director</p> 
+                            </div> 
+                            <div class="text-center" data-aos="fade-up" data-aos-delay="300"> 
+                                <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-zaxtrom-red"> 
+                                    <img src="Areena.jpg" alt="Board Member" class="w-full h-full object-cover"> 
+                                </div> 
+                                <h3 class="text-xl font-bold">Areena Arshad</h3> 
+                                <p class="text-zaxtrom-red mb-2">Board Member</p> 
+                                <p class="text-gray-600 text-sm">Former CEO at Zaxtrom</p> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </section>
+                <!-- CTA Section --> 
+                <section class="py-20 bg-zaxtrom-red text-white"> 
+                    <div class="container mx-auto px-6 text-center"> 
+                        <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Join Our Leadership Team</h2> 
+                        <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">We're always looking for exceptional leaders to join our team.</p> 
+                        <a href="careers.html" class="bg-white text-zaxtrom-red px-8 py-3 rounded-full font-semibold inline-block hover:bg-gray-100 transition duration-300" data-aos="fade-up" data-aos-delay="200">View Executive Openings</a> 
+                    </div> 
+                </section>
+
+    <!-- Footer -->
+    <footer class="bg-zaxtrom-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-zaxtrom-red">ZAXTROM</h3>
+                    <p class="text-gray-400">Innovating solutions for a better tomorrow.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://x.com/zaxtrom" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/laraeb-rauf-103421380/" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                        <a href="https://www.facebook.com/zaxtromofficial" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="https://www.instagram.com/zaxtrom_tech/" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="leader.html" class="text-gray-400 hover:text-white">Leadership</a></li>
+                        <li><a href="career.html" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="learn.html" class="text-gray-400 hover:text-white">Learn</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="case-study.html" class="text-gray-400 hover:text-white">Case Studies</a></li>
+                        <li><a href="whitepapers.html" class="text-gray-400 hover:text-white">Whitepapers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Okara, Punjab, Pakistan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Zaxtrom.official658@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">+92 3067938404</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Zaxtrom. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
+                    <a href="cookie.html" class="text-gray-500 hover:text-white text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        feather.replace();
+    </script>
+
+</body>
+</html>

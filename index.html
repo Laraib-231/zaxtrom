@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaxtrom - Innovative Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zaxtrom: {
+                            red: '#e63946',
+                            dark: '#1a1a1a',
+                            light: '#f8f9fa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .nav-link:hover {
+            color: #e63946 !important;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(230, 57, 70, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-zaxtrom-light text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-zaxtrom-dark text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="index.html">
+                    <img src="whitelogo.png" alt="Zaxtrom Logo" class="h-10 w-full">
+                    </a>
+                    <!-- <a href="index.html" class="text-2xl font-bold text-zaxtrom-red">ZAXTROM</a> -->
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-zaxtrom-red transition duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-white hover:text-zaxtrom-red transition duration-300">About</a>
+                    <a href="leader.html" class="nav-link text-white hover:text-zaxtrom-red transition duration-300">Leadership</a>
+                    <a href="learn.html" class="nav-link text-white hover:text-zaxtrom-red transition duration-300">Learn</a>
+                    <a href="careers.html" class="nav-link text-white hover:text-zaxtrom-red transition duration-300">Careers</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-zaxtrom-red transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <i data-feather="menu" class="text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden md:hidden bg-zaxtrom-dark py-4">
+                <a href="index.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Home</a>
+                <a href="about.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">About</a>
+                <a href="leader.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Leadership</a>
+                <a href="learn.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Learn</a>
+                <a href="careers.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Careers</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-zaxtrom-red">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Innovating <span class="text-zaxtrom-red">Tomorrow</span> Today</h1>
+                    <p class="text-xl mb-8">Zaxtrom delivers cutting-edge solutions that transform businesses and empower people.</p>
+                    <a href="contact.html" class="btn-primary bg-zaxtrom-red text-white px-8 py-3 rounded-full font-semibold inline-block">Explore Solutions</a>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="http://static.photos/technology/1200x630/1" alt="Zaxtrom Technology" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Our Core Capabilities</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We combine innovation with execution to deliver exceptional results for our clients.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-zaxtrom-light p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-zaxtrom-red mb-4">
+                        <i data-feather="cpu" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Advanced Technology</h3>
+                    <p class="text-gray-600">Harnessing the power of AI, blockchain, and cloud computing to drive digital transformation.</p>
+                </div>
+                <div class="bg-zaxtrom-light p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-zaxtrom-red mb-4">
+                        <i data-feather="users" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Team</h3>
+                    <p class="text-gray-600">Our diverse team of industry veterans and young innovators work together to solve complex challenges.</p>
+                </div>
+                <div class="bg-zaxtrom-light p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-zaxtrom-red mb-4">
+                        <i data-feather="trending-up" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proven Results</h3>
+                    <p class="text-gray-600">We measure our success by the tangible impact we create for our clients and communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-zaxtrom-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold mb-2 text-zaxtrom-red">20+</div>
+                    <div class="text-gray-300">Global Clients</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold mb-2 text-zaxtrom-red">5</div>
+                    <div class="text-gray-300">Years Experience</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold mb-2 text-zaxtrom-red">7+</div>
+                    <div class="text-gray-300">Projects Completed</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl font-bold mb-2 text-zaxtrom-red">98%</div>
+                    <div class="text-gray-300">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-zaxtrom-red text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Let's discuss how Zaxtrom can help you achieve your goals.</p>
+            <a href="contact.html" class="btn-primary bg-white text-zaxtrom-red px-8 py-3 rounded-full font-semibold inline-block" data-aos="fade-up" data-aos-delay="200">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zaxtrom-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-zaxtrom-red">ZAXTROM</h3>
+                    <p class="text-gray-400">Innovating solutions for a better tomorrow.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://x.com/zaxtrom" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/laraeb-rauf-103421380/" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                        <a href="https://www.facebook.com/zaxtromofficial" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="https://www.instagram.com/zaxtrom_tech/" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="leader.html" class="text-gray-400 hover:text-white">Leadership</a></li>
+                        <li><a href="career.html" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="learn.html" class="text-gray-400 hover:text-white">Learn</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="case-study.html" class="text-gray-400 hover:text-white">Case Studies</a></li>
+                        <li><a href="whitepapers.html" class="text-gray-400 hover:text-white">Whitepapers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Okara, Punjab, Pakistan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Zaxtrom.official658@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">+92 3067938404</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Zaxtrom. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
+                    <a href="cookie.html" class="text-gray-500 hover:text-white text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Zaxtrom</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            zaxtrom: {
+              red: "#e63946",
+              dark: "#1a1a1a",
+              light: "#f8f9fa",
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <style>
+    .nav-link:hover { color: #e63946 !important; }
+    .form-input:focus {
+      outline: none;
+      border-color: #e63946;
+      box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-zaxtrom-light text-gray-800 font-sans">
+
+  <!-- Navigation -->
+  <nav class="bg-zaxtrom-dark text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="whitelogo.png" alt="Zaxtrom Logo" class="h-10 w-auto">
+        <!-- <span class="text-2xl font-bold text-zaxtrom-red">ZAXTROM</span> -->
+      </a>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link text-white">Home</a>
+        <a href="about.html" class="nav-link text-white">About</a>
+        <a href="leader.html" class="nav-link text-white">Leadership</a>
+        <a href="learn.html" class="nav-link text-white">Learn</a>
+        <a href="career.html" class="nav-link text-white">Careers</a>
+        <a href="contact.html" class="nav-link text-zaxtrom-red font-semibold">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="mobile-menu-button"><i data-feather="menu" class="text-white"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-zaxtrom-dark to-black text-white py-20 text-center">
+    <div class="container mx-auto px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">Let's Connect </h1>
+      <p class="text-xl max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        Choose your preferred way to reach Zaxtrom Via Email, WhatsApp, SMS, Call or Social Media.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Options -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+      
+      <!-- Left Info -->
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-6 text-zaxtrom-red">Get In Touch</h2>
+        <p class="text-gray-600 mb-6">
+          We’re available through multiple channels. Choose how you want to connect with us:
+        </p>
+
+        <ul class="space-y-4">
+          <li class="flex items-center"><i data-feather="map-pin" class="text-zaxtrom-red mr-3"></i>Okara, Punjab, Pakistan</li>
+          <li class="flex items-center"><i data-feather="phone" class="text-zaxtrom-red mr-3"></i>+92 322 6807571</li>
+          <li class="flex items-center"><i data-feather="mail" class="text-zaxtrom-red mr-3"></i>Zaxtrom.official658@gmail.com</li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="mt-8 space-y-3">
+          <a href="tel:+923226807571" class="block bg-blue-600 text-white py-3 rounded-full font-semibold hover:bg-blue-700 text-center">📞 Call Us Now</a>
+          <a href="sms:+923226807571?body=Hello%20Zaxtrom!%20I%20want%20to%20know%20about..."
+             class="block bg-blue-500 text-white py-3 rounded-full font-semibold hover:bg-blue-600 text-center">💬 Send SMS</a>
+          <a href="https://wa.me/923226807571?text=Hello%20Zaxtrom!%20Tell%20me%20more..."
+             target="_blank" class="block bg-green-500 text-white py-3 rounded-full font-semibold hover:bg-green-600 text-center">💚 Chat on WhatsApp</a>
+          <a href="mailto:Zaxtrom.official658@gmail.com?subject=Inquiry&body=Hello%20Zaxtrom%20Team,"
+             class="block bg-zaxtrom-red text-white py-3 rounded-full font-semibold hover:bg-red-600 text-center">✉️ Send Email</a>
+        </div>
+
+        <!-- Social -->
+        <div class="flex space-x-4 mt-8">
+          <a href="#" class="text-gray-600 hover:text-zaxtrom-red"><i data-feather="facebook"></i></a>
+          <a href="#" class="text-gray-600 hover:text-zaxtrom-red"><i data-feather="instagram"></i></a>
+          <a href="#" class="text-gray-600 hover:text-zaxtrom-red"><i data-feather="linkedin"></i></a>
+          <a href="#" class="text-gray-600 hover:text-zaxtrom-red"><i data-feather="twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-6 text-zaxtrom-red">Send Us a Message</h2>
+        <form action="https://formspree.io/f/xpwaagqv" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" required class="form-input w-full p-3 border rounded-lg border-gray-300" />
+          <input type="email" name="email" placeholder="Your Email" required class="form-input w-full p-3 border rounded-lg border-gray-300" />
+          <textarea name="message" rows="5" placeholder="Your Message" required class="form-input w-full p-3 border rounded-lg border-gray-300"></textarea>
+          <button type="submit" class="bg-zaxtrom-red text-white px-8 py-3 rounded-full font-semibold hover:bg-red-600 transition duration-300 w-full">
+            Send Message
+          </button>
+        </form>
+        <p class="text-sm text-gray-500 mt-2">Form powered by Formspree — messages will go directly to Zaxtrom’s official email.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="bg-zaxtrom-light py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-zaxtrom-red" data-aos="fade-up">Find Us on Map</h2>
+      <div class="overflow-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+        <iframe src="https://www.google.com/maps?q=Okara,+Pakistan&output=embed" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="bg-zaxtrom-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-zaxtrom-red">ZAXTROM</h3>
+                    <p class="text-gray-400">Innovating solutions for a better tomorrow.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://x.com/zaxtrom" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/laraeb-rauf-103421380/" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                        <a href="https://www.facebook.com/zaxtromofficial" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="https://www.instagram.com/zaxtrom_tech/" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="leader.html" class="text-gray-400 hover:text-white">Leadership</a></li>
+                        <li><a href="career.html" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="learn.html" class="text-gray-400 hover:text-white">Learn</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="case-study.html" class="text-gray-400 hover:text-white">Case Studies</a></li>
+                        <li><a href="whitepapers.html" class="text-gray-400 hover:text-white">Whitepapers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Okara, Punjab, Pakistan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">Zaxtrom.official658@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span class="text-gray-400">+92 3067938404</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 Zaxtrom. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
+                    <a href="cookie.html" class="text-gray-500 hover:text-white text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+    feather.replace();
+    const mobileMenuButton = document.querySelector(".mobile-menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    mobileMenuButton?.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+  </script>
+</body>
+</html>
